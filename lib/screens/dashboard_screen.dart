@@ -110,7 +110,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           color: _performanceScore > 80 ? Colors.green.withOpacity(0.2) : Colors.amber.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(10),
                         ),
-                        textDirection: TextDirection.ltr,
                         child: Text(
                           '$_performanceScore / 100',
                           style: TextStyle(color: _performanceScore > 80 ? Colors.greenAccent : Colors.amberAccent, fontWeight: FontWeight.bold),
