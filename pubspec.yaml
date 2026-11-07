@@ -1,5 +1,5 @@
-name: turbo_boost_optimizer
-description: "Um aplicativo otimizador de jogos e sistema."
+name: turboboost_optimizer
+description: "Aplicativo legítimo de otimização e game turbo para Android."
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  shared_preferences: ^2.2.2
+  device_info_plus: ^10.1.0
+  battery_plus: ^6.0.1
 
 flutter:
   uses-material-design: true
