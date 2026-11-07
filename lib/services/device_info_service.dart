@@ -6,7 +6,7 @@ class DeviceInfoService {
   final DeviceInfoPlugin _deviceInfo = DeviceInfoPlugin();
   final Battery _battery = Battery();
 
-  Future> getDeviceInfo() async {
+  Future getDeviceInfo() async {
     String model = 'Desconhecido';
     String manufacturer = 'Desconhecido';
     int androidSdk = 29;
