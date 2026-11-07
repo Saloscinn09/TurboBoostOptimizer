@@ -6,14 +6,20 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
       - name: Set up Flutter
-        uses: subosito/flutter-action@v2
+        uses: subosito/flutter-action@v4
         with:
           flutter-version: '3.x'
           channel: 'stable'
@@ -29,4 +35,3 @@ jobs:
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
-
